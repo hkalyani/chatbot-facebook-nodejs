@@ -1,10 +1,10 @@
 'use strict';
 
 const apiai = require('apiai');
-const config = require('./config');;;;;
+const config = require('./config');
 const express = require('express');
 const crypto = require('crypto');
-const bodyparser = require('body-parser');
+const bodyParser = require('body-parser');
 const request = require('request');
 const app = express();
 const uuid = require('uuid');
