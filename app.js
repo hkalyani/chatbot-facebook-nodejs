@@ -32,9 +32,9 @@ if (!config.SERVER_URL) { //used for ink to static files
 app.set('port', (process.env.PORT || 5000))
 
 //verify request came from facebook
-app.use(bodyParser.json({function functionName() {
+app.use(bodyParser.json({
 
-}
+
 	verify: verifyRequestSignature
 }));
 
