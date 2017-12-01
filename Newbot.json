@@ -1,0 +1,57 @@
+:\Users\inf>a:
+
+A:\>cd chatbot\NewBot
+
+A:\chatbot\NewBot>git clone https://github.com/hkalyani/chatbot-facebook-nodejs.git
+Cloning into 'chatbot-facebook-nodejs'...
+remote: Counting objects: 56, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 56 (delta 5), reused 11 (delta 5), pack-reused 44
+Unpacking objects: 100% (56/56), done.
+
+A:\chatbot\NewBot>dir
+ Volume in drive A is New Volume
+ Volume Serial Number is 86F5-407F
+
+ Directory of A:\chatbot\NewBot
+
+23-11-2017  14:40    <DIR>          .
+23-11-2017  14:40    <DIR>          ..
+23-11-2017  14:40    <DIR>          chatbot-facebook-nodejs
+               0 File(s)              0 bytes
+               3 Dir(s)  402,834,829,312 bytes free
+
+A:\chatbot\NewBot>cd chatbot-facebook-nodejs
+
+A:\chatbot\NewBot\chatbot-facebook-nodejs>dir
+ Volume in drive A is New Volume
+ Volume Serial Number is 86F5-407F
+
+ Directory of A:\chatbot\NewBot\chatbot-facebook-nodejs
+
+23-11-2017  14:40    <DIR>          .
+23-11-2017  14:40    <DIR>          ..
+23-11-2017  14:40                39 .gitignore
+23-11-2017  14:40            21,454 app.js
+23-11-2017  14:40               480 config.js
+23-11-2017  14:40                 0 git
+23-11-2017  14:40               425 package.json
+23-11-2017  14:40                16 Procfile
+23-11-2017  14:40    <DIR>          public
+               6 File(s)         22,414 bytes
+               3 Dir(s)  402,834,829,312 bytes free
+
+A:\chatbot\NewBot\chatbot-facebook-nodejs>heroku login
+Enter your Heroku credentials:
+Email: kalyani.pandala@gmail.com
+Password: **********
+Logged in as kalyani.pandala@gmail.com
+
+A:\chatbot\NewBot\chatbot-facebook-nodejs>git push heroku master
+fatal: 'heroku' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+A:\chatbot\NewBot\chatbot-facebook-nodejs>

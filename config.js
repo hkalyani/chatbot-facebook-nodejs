@@ -4,4 +4,8 @@ module.exports = {
     API_AI_CLIENT_ACCESS_TOKEN: 'b195ac1adb584b1da8a6e623148efafa',
     FB_APP_SECRET: 'bac0b0f4de3bb9041b6476943e1513b9',
     SERVER_URL: " https://mysterious-earth-14903.herokuapp.com/",
+SENDGRID_API_KEY: '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',
+EMAIL_FROM: 'kalyani.pandala@gmail.com',
+EMAIL_TO: 'kalyani@rnt.ai'
+
 };
