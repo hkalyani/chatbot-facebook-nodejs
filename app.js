@@ -26,14 +26,14 @@ if (!config.FB_APP_SECRET) {
 if (!config.SERVER_URL) { //used for ink to static files
 	throw new Error('missing SERVER_URL');
 }
-if (!config.SENDGRID_API_KEY) { //used for ink to static files
-	throw new Error('missing SENDGRID_API_KEY');
+if (!config.SENGRID_API_KEY) { //used for ink to static files
+	throw new Error('missing SENGRID_API_KEY');
 }
 if (!config.EMAIL_FROM) { //used for ink to static files
-	throw new Error('EMAIL_FROM');
+	throw new Error('missing EMAIL_FROM');
 }
 if (!config.EMAIL_TO) { //used for ink to static files
-	throw new Error('EMAIL_TO');
+	throw new Error('missing EMAIL_TO');
 }
 
 
@@ -926,7 +926,8 @@ function verifyRequestSignature(req, res, buf) {
 	}
 }
 
-var helper = require('sendgrid').mail;
+function sendEmail(subject, content) {
+			 var helper = require('sendgrid').mail;
 
        var from_email = new helper.Email(config.EMAIL_FROM);
        var to_email = new helper.Email(config.EMAIL_TO);
