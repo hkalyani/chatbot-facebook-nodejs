@@ -8,4 +8,4 @@ curl -X POST -H "Content- Type: application/json" -d '{
   "text":"Hello! Welcome to RNT.AI, How can i Help you"
   }
 ]
-}'"https//graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAKCEZBPmNCMBABZCkwDnQ99zfCfBOkMIKuC24KutTa5U05A8YnqYSmEdEKcTXZA8kZAZAET2gtFCfwS4tfHa5nZBZCiHCMfoapvGfZBsJ6f2m70XZADhmA5OoE0iP2lyVZCdShUfZBNUcdZAuSpTCfz6acABqZCEZCZCs5SQ4jnLeeD2A7BB31D8ova9RO"\
+}'"https://graph.facebook.com/v2.6/me/messenger_profile?access_token=EAAKCEZBPmNCMBABZCkwDnQ99zfCfBOkMIKuC24KutTa5U05A8YnqYSmEdEKcTXZA8kZAZAET2gtFCfwS4tfHa5nZBZCiHCMfoapvGfZBsJ6f2m70XZADhmA5OoE0iP2lyVZCdShUfZBNUcdZAuSpTCfz6acABqZCEZCZCs5SQ4jnLeeD2A7BB31D8ova9RO"
