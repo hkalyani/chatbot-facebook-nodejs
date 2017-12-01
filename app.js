@@ -200,8 +200,8 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 	switch (action) {
     case "detailed-application":
 		  if (isDefined(contexts[0]) && contexts[0].name =='job_application' && contexts[0].parameters) {
-         let phone_number = (isDefined(contexts[0].parameter['phone_number'])
-				 && contexts[0].parameters['phone_number']! ='') ? contexts[0].parameters['phone_number']:'';
+         let phone_number = (isDefined(contexts[0].parameter['phone-number'])
+				 && contexts[0].parameters['phone_number']! ='') ? contexts[0].parameters['phone-number']:'';
 				 let user_name = (isDefined(contexts[0].parameter['user-name'])
 				 && contexts[0].parameters['user-name']! ='') ? contexts[0].parameters['user-name']:'';
 				 let previous_job = (isDefined(contexts[0].parameter['previous-job'])
@@ -948,6 +948,7 @@ var helper = require('sendgrid').mail;
        })
 
 }
+
 
 function isDefined(obj) {
 	if (typeof obj == 'undefined') {
