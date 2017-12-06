@@ -201,9 +201,9 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
     case "detailed-application":
 		  if (isDefined(contexts[0]) && contexts[0].name =='job_application' && contexts[0].parameters) {
          let phone_number = (isDefined(contexts[0].parameter['phone-number'])
-				 && contexts[0].parameters['phone_number']! ='') ? contexts[0].parameters['phone-number']:'';
+				 && contexts[0].parameters['phone_number']!='') ? contexts[0].parameters['phone-number']:'';
 				 let user_name = (isDefined(contexts[0].parameter['user-name'])
-				 && contexts[0].parameters['user-name']! ='') ? contexts[0].parameters['user-name']:'';
+				 && contexts[0].parameters['user-name']!='') ? contexts[0].parameters['user-name']:'';
 				 let previous_job = (isDefined(contexts[0].parameter['previous-job'])
 				 && contexts[0].parameters['previous-job']! ='') ? contexts[0].parameters['previous-job']:'';
 				 let years_of_experience = (isDefined(contexts[0].parameter['years-of-experience'])
@@ -229,7 +229,7 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 
 					 sendEmail('New job application', emailcontent);
 			}
-			sendTextMessage(sender, responseText = 'Thank you');
+			sendTextMessage(sender, responseText = '');
 			break;
 
 
