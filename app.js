@@ -55,7 +55,7 @@ app.use(express.static('public'));
 // Process application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({
 	extended: false
-}))
+}));
 
 // Process application/json
 app.use(bodyParser.json())
@@ -209,13 +209,13 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 				 let years_of_experience = (isDefined(contexts[0].parameter['years-of-experience'])
 				 && contexts[0].parameters['years-of-experience']! ='') ? contexts[0].parameters['years-of-experience']:'';
 				 let employment_type = (isDefined(contexts[0].parameter['employment-type'])
-				 && contexts[0].parameters['employment-type']! ='') ? contexts[0].parameters['employment-type']:'';
+				 && contexts[0].parameters['employment-type']!='') ? contexts[0].parameters['employment-type']:'';
 				 let education_details = (isDefined(contexts[0].parameter['education-details'])
-				 && contexts[0].parameters['education-details']! ='') ? contexts[0].parameters['education-details']:'';
+				 && contexts[0].parameters['education-details']!='') ? contexts[0].parameters['education-details']:'';
 				 let compensation_details = (isDefined(contexts[0].parameter['compensation-details'])
-				 && contexts[0].parameters['compensation-details']! ='') ? contexts[0].parameters['compensation-details']:'';
+				 && contexts[0].parameters['compensation-details']!='') ? contexts[0].parameters['compensation-details']:'';
 				 let job_vacancy = (isDefined(contexts[0].parameter['job-vacancy'])
-				 && contexts[0].parameters['job-vacancy']! ='') ? contexts[0].parameters['job-vacancy']:'';
+				 && contexts[0].parameters['job-vacancy']!='') ? contexts[0].parameters['job-vacancy']:'';
 
 				 if (phone_number != '' && user_name != '' && previous_job != '' && years_of_experience != '' && employment_type != ''
 				 && education_details != '' && compensation_details != '' && job_vacancy != '') {
