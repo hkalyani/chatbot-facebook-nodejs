@@ -205,9 +205,9 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 				 let user_name = (isDefined(contexts[0].parameter['user-name'])
 				 && contexts[0].parameters['user-name']!='') ? contexts[0].parameters['user-name']:'';
 				 let previous_job = (isDefined(contexts[0].parameter['previous-job'])
-				 && contexts[0].parameters['previous-job']! ='') ? contexts[0].parameters['previous-job']:'';
+				 && contexts[0].parameters['previous-job']!='') ? contexts[0].parameters['previous-job']:'';
 				 let years_of_experience = (isDefined(contexts[0].parameter['years-of-experience'])
-				 && contexts[0].parameters['years-of-experience']! ='') ? contexts[0].parameters['years-of-experience']:'';
+				 && contexts[0].parameters['years-of-experience']!='') ? contexts[0].parameters['years-of-experience']:'';
 				 let employment_type = (isDefined(contexts[0].parameter['employment-type'])
 				 && contexts[0].parameters['employment-type']!='') ? contexts[0].parameters['employment-type']:'';
 				 let education_details = (isDefined(contexts[0].parameter['education-details'])
