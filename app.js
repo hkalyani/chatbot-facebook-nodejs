@@ -229,18 +229,13 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 
 					 sendEmail('New job application', emailcontent);
 			}
-			sendTextMessage(sender, responseText);
+		}
+        break;
+		 default:
+ 			//unhandled action, just send back the text
+ 			sendTextMessage(sender, responseText);
 
-			break;
-
-				//unhandled action, just send back the text
-
-  }
-}
-
-function handleApiAiAction(sender, action, responseText, contexts, parameters) {
-	switch (action) {
-    case  "job-enquiry":
+		case  "job-enquiry":
        let replies = [
 			{
         "content_type":"text",
