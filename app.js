@@ -230,10 +230,9 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 					 sendEmail('New job application', emailcontent);
 			}
 		}
-        break;
-		 default:
- 			//unhandled action, just send back the text
+
  			sendTextMessage(sender, responseText);
+			break;
 
 		case  "job-enquiry":
        let replies = [
