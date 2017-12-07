@@ -27,7 +27,7 @@ if (!config.SERVER_URL) { //used for ink to static files
 	throw new Error('missing SERVER_URL');
 }
 if (!config.SENGRID_API_KEY) { //used for ink to static files
-	throw new Error('missing SENGRID_API_KEY');
+	throw new Error('missing SENDGRID_API_KEY');
 }
 if (!config.EMAIL_FROM) { //used for ink to static files
 	throw new Error('missing EMAIL_FROM');
@@ -229,10 +229,17 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 
 					 sendEmail('New job application', emailcontent);
 			}
-			sendTextMessage(sender, responseText = '');
+			sendTextMessage(sender, responseText);
 			break;
+			default:
+				//unhandled action, just send back the text
+				sendTextMessage(sender, responseText);
+  }
 }
-     case "job-enquiry":
+
+function handleApiAiAction(sender, action, responseText, contexts, parameters) {
+	switch (action) {
+    case  "job-enquiry":
        let replies = [
 			{
         "content_type":"text",
@@ -260,6 +267,7 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 			sendTextMessage(sender, responseText);
 	}
 }
+
 
 function handleMessage(message, sender) {
 	switch (message.type) {
@@ -934,7 +942,7 @@ function sendEmail(subject, content) {
        var content = new helper.Content("text/html", content);
        var mail = new helper.Mail(from_email, subject, to_email, content);
 
-       var sg = require('sendgrid')(config.SENGRID_API_KEY);
+       var sg = require('sendgrid')(config.SENDGRID_API_KEY);
        var request = sg.emptyRequest({
            method: 'POST',
            path: '/v3/mail/send',
