@@ -231,10 +231,9 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 			}
 			sendTextMessage(sender, responseText = '');
 			break;
-
-
-		case "job-enquiry":
-        let replies = [
+}
+     case "job-enquiry":
+       let replies = [
 			{
         "content_type":"text",
         "title":"Pune",
