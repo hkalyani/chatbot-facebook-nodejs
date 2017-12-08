@@ -231,7 +231,7 @@ function handleApiAiAction(sender, action, responseText, contexts, parameters) {
 			}
 		}
 
- 			sendTextMessage(sender, responseText = "Thank you");
+ 			sendTextMessage(sender, responseText =);
 			break;
 
 		case  "job-enquiry":
